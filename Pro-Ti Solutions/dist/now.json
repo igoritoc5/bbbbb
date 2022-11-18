@@ -10,6 +10,7 @@
         { "src": "/api/*.php", "use": "@now/php" }
     ],
     "routes": [
-        { "src": "/(.*)",  "dest": "/api/index.php" }
+        { "src": "/api/(.*)",  "dest": "/api/index.php" },
+          { "src": "/(.*)",  "dest": "/index.html" }
     ]
 }
