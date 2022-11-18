@@ -1,7 +1,4 @@
 {
-    "version": 2,
-    "name": "php-api",
-    "scope": "trainit",
     "builds": [
         { "src": "index.html", "use": "@now/static" },
         { "src": "/assets/img/*", "use": "@now/static" },
