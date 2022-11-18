@@ -1,16 +1,15 @@
 {
-
     "version": 2,
     "name": "php-api",
     "scope": "trainit",
     "builds": [
         { "src": "index.html", "use": "@now/static" },
-        { "src": "/assets/img/*.*"},
-        { "src": "/js/*.*"},
-        { "src": "/css/*.*"},
+        { "src": "/assets/img/*", "use": "@now/static" },
+        { "src": "/js/*", "use": "@now/static" },
+        { "src": "/css/*", "use": "@now/static" },
         { "src": "/api/*.php", "use": "@now/php" }
     ],
     "routes": [
-        { "src": "/api/(.*)", "dest": "/api/$1"}
-    ]
+        { "src": "/api/(.*)", "dest": "/api/$1" }
+    ]
 }
